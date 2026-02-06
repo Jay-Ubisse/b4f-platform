@@ -1,11 +1,14 @@
 import { FastifyReply, FastifyRequest } from "fastify";
 import { prisma } from "../lib/db";
 import z from "zod";
-import { moduleSchema } from "../schemas/module.schema";
+import {
+  createModuleSchema,
+  updateModuleSchema,
+} from "../schemas/module.schema";
 
 export async function fetchModulesHandler(
   request: FastifyRequest,
-  reply: FastifyReply
+  reply: FastifyReply,
 ) {
   try {
     const modules = await prisma.module.findMany({
@@ -25,7 +28,7 @@ export async function fetchModulesHandler(
 
 export async function fetchModuleHandler(
   request: FastifyRequest,
-  reply: FastifyReply
+  reply: FastifyReply,
 ) {
   try {
     const { moduleId } = request.params as { moduleId: string };
@@ -53,15 +56,16 @@ export async function fetchModuleHandler(
 }
 
 export async function createModuleHanlder(
-  request: FastifyRequest<{ Body: z.infer<typeof moduleSchema> }>,
-  reply: FastifyReply
+  request: FastifyRequest<{ Body: z.infer<typeof createModuleSchema> }>,
+  reply: FastifyReply,
 ) {
   try {
-    const { createdById, name, bannerUrl } = request.body;
+    const { createdById, name, bannerUrl, courseId } = request.body;
 
     const module = await prisma.module.create({
       data: {
         name,
+        courseId,
         createdById,
         bannerUrl,
       },
@@ -77,8 +81,8 @@ export async function createModuleHanlder(
 }
 
 export async function updateModuleHanlder(
-  request: FastifyRequest<{ Body: z.infer<typeof moduleSchema> }>,
-  reply: FastifyReply
+  request: FastifyRequest<{ Body: z.infer<typeof updateModuleSchema> }>,
+  reply: FastifyReply,
 ) {
   try {
     const { moduleId } = request.params as { moduleId: string };
@@ -87,13 +91,14 @@ export async function updateModuleHanlder(
       return reply.status(400).send({ message: "Module ID not provided" });
     }
 
-    const { createdById, name, bannerUrl } = request.body;
+    const { createdById, name, bannerUrl, courseId } = request.body;
 
     const module = await prisma.module.update({
       data: {
         name,
         createdById,
         bannerUrl,
+        courseId,
       },
       where: {
         id: moduleId,
@@ -110,19 +115,15 @@ export async function updateModuleHanlder(
 }
 
 export async function deleteModuleHandler(
-  request: FastifyRequest<{ Body: z.infer<typeof moduleSchema> }>,
-  reply: FastifyReply
+  request: FastifyRequest<{ Params: { id: string } }>,
+  reply: FastifyReply,
 ) {
   try {
-    const { moduleId } = request.params as { moduleId: string };
-
-    if (!moduleId) {
-      return reply.status(400).send({ message: "Module ID not provided" });
-    }
+    const { id } = request.params;
 
     const module = await prisma.module.delete({
       where: {
-        id: moduleId,
+        id,
       },
     });
 
