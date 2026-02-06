@@ -1,0 +1,832 @@
+{
+  "Public": {
+    "HomePage": {
+      "NavBar": {
+        "B4F": "BYTES4FUTURE",
+        "Program": "البرنامج",
+        "Purpose": "الهدف",
+        "FAQ": "الأسئلة الشائعة"
+      },
+      "Title": "ادخل إلى العالم الرقمي",
+      "Subtitle": "طوّر مسارك المهني!",
+      "ApplicationButton": "قدّم الآن",
+      "ApplicationStatusButton": "عرض حالة الطلب"
+    },
+    "ApplicationPage": {
+      "EditionNotFound": "لا توجد أي دورة مفتوحة للتقديم حالياً",
+      "Form": {
+        "Processing": "جاري معالجة الطلب...",
+        "Success": "تم إرسال الطلب بنجاح!",
+        "Error": "حدث خطأ أثناء إرسال الطلب. يرجى المحاولة مرة أخرى.",
+        "Title": "قدّم إلى ",
+        "NameLabel": "الاسم",
+        "NamePlaceholder": "أدخل اسمك الكامل",
+        "BirthDateLabel": "تاريخ الميلاد",
+        "BirthDatePlaceholder": "اختر تاريخاً",
+        "GenderLabel": "الجنس",
+        "GenderPlaceholder": "اختر الجنس",
+        "GendersList": {
+          "Male": "ذكر",
+          "Female": "أنثى",
+          "Other": "آخر"
+        },
+        "EmailLabel": "البريد الإلكتروني",
+        "EmailPlaceholder": "أدخل بريدك الإلكتروني",
+        "PhoneLabel": "رقم الهاتف",
+        "PhonePlaceholder": "أدخل رقم هاتفك",
+        "WhatsAppLabel": "واتساب (اختياري)",
+        "WhatsAppPlaceholder": "أدخل رقم واتساب",
+        "CountryLabel": "الدولة",
+        "CountryPlaceholder": "اختر الدولة",
+        "CourseLabel": "الدورة",
+        "CoursePlaceholder": "اختر الدورة",
+        "SelectCountryFirst": "يرجى اختيار الدولة أولاً",
+        "LocationLabel": "الموقع/المجلس",
+        "LocationPlaceholder": "اختر الموقع/المجلس",
+        "MotivationLabel": "الدافع",
+        "MotivationPlaceholder": "ما الذي دفعك للتقديم إلى البرنامج؟",
+        "SendButton": "إرسال"
+      }
+    },
+    "CandidateSearchPage": {
+      "InputPlaceholder": "أدخل رمز المرشح",
+      "SearchButton": "بحث",
+      "CandidateNotFound": "المرشح غير موجود",
+      "NoCandidatesFound": "لم يتم العثور على أي مرشح",
+      "Error": "حدث خطأ أثناء تحميل المرشحين",
+      "Refresh": "تحديث"
+    },
+    "CandidateDetailsPage": {
+      "Badge": "الدورة",
+      "Labels": {
+        "PhoneLabel": "الهاتف",
+        "LocationLabel": "الموقع/المجلس",
+        "AgeLabel": "العمر",
+        "CourseLabel": "الدورة"
+      },
+      "Loading": "جاري إكمال الطلب...",
+      "Success": "تم إكمال الطلب بنجاح!",
+      "Error": "حدث خطأ أثناء إكمال المقابلة. يرجى المحاولة مرة أخرى.",
+      "CandidateNotFound": "المرشح غير موجود",
+      "FetchCandidateError": "حدث خطأ أثناء تحميل المرشح",
+      "Refresh": "تحديث",
+      "ApplicationStatusLabel": "حالة الطلب:",
+      "ApplicationStatus": {
+        "PENDING": "قيد الانتظار",
+        "INTERVIEW_SCHEDULED": "تمت جدولة المقابلة",
+        "ADMITTED": "مقبول",
+        "NOT_ADMITTED": "غير مقبول"
+      },
+      "YearsOld": "سنة",
+      "Motivation": "الدافع",
+      "ApplicationScheduleLink": "قم بجدولة مقابلتك عبر الرابط أدناه:",
+      "FinshScheduleLabel": "بعد جدولة المقابلة، اضغط على زر \"إكمال المقابلة\" لإنهائها.",
+      "FinshScheduleButton": "إكمال الطلب"
+    },
+    "SignInPage": {
+      "Loading": "جاري تسجيل الدخول...",
+      "Success": "تم تسجيل الدخول بنجاح!",
+      "InvalidCredentials": "بيانات الدخول غير صحيحة. يرجى المحاولة مرة أخرى.",
+      "Error": "حدث خطأ أثناء تسجيل الدخول. يرجى المحاولة مرة أخرى.",
+      "Form": {
+        "Badge": "منصة إدارة الطلبات",
+        "Title": "مرحباً بعودتك",
+        "Subtitle": "سجّل الدخول إلى لوحة تحكم طلبات Bytes4Future",
+        "EmailLabel": "البريد الإلكتروني",
+        "EmailPlaceholder": "أدخل بريدك الإلكتروني",
+        "PasswordLabel": "كلمة المرور",
+        "PasswordPlaceholder": "أدخل كلمة المرور",
+        "ForgotPassword": "هل نسيت كلمة المرور؟",
+        "SubmitButton": "تسجيل الدخول"
+      },
+      "Card": {
+        "Welcome": "مرحباً بك في",
+        "Title": "تعلّم. ابنِ. أطلق.",
+        "Intro": "تجربة حديثة للتدريب في التكنولوجيا — دورات، إصدارات، فصول، طلبات، ومتابعة في مكان واحد.",
+        "Modules": {
+          "Dashboards": "لوحات المعلومات",
+          "ApplicationsManagement": "إدارة الطلبات",
+          "LessonsManagement": "إدارة الدروس"
+        },
+        "Copyright": "جميع الحقوق محفوظة"
+      }
+    }
+  },
+  "Dashboard": {
+    "SideBar": {
+      "Overview": "نظرة عامة",
+      "Users": "المستخدمون",
+      "Courses": "الدورات",
+      "Countries": "الدول",
+      "Editions": "الإصدارات",
+      "Candidates": "المرشحون",
+      "Interviews": "المقابلات",
+      "Classes": "الفصول",
+      "Support": "الدعم"
+    },
+    "ConfirmDialog": {
+      "Confirm": "تأكيد",
+      "Cancel": "إلغاء"
+    },
+    "OverviewPage": {
+      "BreadCrumbTitile": "نظرة عامة",
+      "Subtitle": "تتبّع المؤشرات والاتجاهات الخاصة بالطلبات في الإصدار المحدد.",
+      "ExportButton": {
+        "Label": "تصدير",
+        "Loading": "جاري التصدير..."
+      },
+      "NoDataFound": "لم يتم العثور على بيانات",
+      "NoDataFoundInEdition": "لم يتم العثور على بيانات في هذا الإصدار",
+      "Refresh": "تحديث",
+      "TotalCandidates": "إجمالي المرشحين",
+      "FemaleCandidates": "المرشحات",
+      "MaleCandidates": "المرشحون (ذكور)",
+      "AdmittedCandidates": "المرشحون المقبولون",
+      "FemaleAdmittedCandidates": "المقبولات (إناث)",
+      "MaleAdmittedCandidates": "المقبولون (ذكور)",
+      "InterviewedCandidates": "المرشحون الذين أُجريت لهم مقابلة",
+      "NotInterviewedCandidates": "المرشحون الذين لم تُجرَ لهم مقابلة",
+      "CandidatesByGenderChartTitle": "توزيع المرشحين حسب الجنس",
+      "CandidatesByStatusChartTitle": "توزيع المرشحين حسب حالة الطلب",
+      "AdmittedCandidatesByGenderChartTitle": "المقبولون حسب الجنس",
+      "AdmittedRate": "معدل القبول",
+      "NotAdmittedRate": "معدل عدم القبول",
+      "ApplicationsEvolutionChartTitle": "تطور الطلبات حسب الفترة",
+      "CandidatesTerritorialDistribution": {
+        "Title": "التوزيع الجغرافي للمرشحين",
+        "Table": {
+          "Location": "الموقع",
+          "Total": "الإجمالي",
+          "GrandTotal": "الإجمالي العام"
+        }
+      }
+    },
+    "UsersPage": {
+      "BreadCrumbTitile": "المستخدمون",
+      "PageTitle": "مستخدمو المنصة",
+      "NewUserButton": "مستخدم جديد",
+      "HeaderActions": {
+        "Badge": "إدارة • المستخدمون",
+        "User": "مستخدم",
+        "Users": "مستخدمون"
+      },
+      "NoUsersFound": "لم يتم العثور على أي مستخدم",
+      "Loading": "جاري تحميل المستخدمين...",
+      "Error": "حدث خطأ أثناء تحميل المستخدمين",
+      "Refresh": "تحديث",
+      "Table": {
+        "NoDataFound": "لم يتم العثور على بيانات",
+        "NameColumn": "الاسم",
+        "EmailColumn": "البريد الإلكتروني",
+        "RoleColumn": "مستوى الوصول",
+        "UserRoles": {
+          "ADMIN": "مسؤول",
+          "RECRUITER": "مسؤول توظيف",
+          "TEACHER": "مدرّس",
+          "STUDENT": "طالب",
+          "ALUMNI": "خريج"
+        },
+        "ActionsColumn": "الإجراءات",
+        "EditAction": "تعديل",
+        "CopyIDAction": "نسخ معرّف المستخدم",
+        "DeleteAction": "حذف المستخدم",
+        "Filters": {
+          "ByName": "تصفية بالاسم",
+          "ByRole": "تصفية حسب مستوى الصلاحيات"
+        },
+        "Navigation": {
+          "Next": "التالي",
+          "Previous": "السابق"
+        }
+      }
+    },
+    "CreateUserPage": {
+      "Form": {
+        "Badge": "مسؤول • إدارة المستخدمين",
+        "Loading": "جاري إنشاء مستخدم جديد...",
+        "Success": "تم إنشاء المستخدم بنجاح!",
+        "Error": "حدث خطأ أثناء إنشاء المستخدم. يرجى المحاولة مرة أخرى.",
+        "Title": "إنشاء مستخدم جديد",
+        "Subtitle": "أنشئ حسابات للفريق (مسؤولو التوظيف والمدرّسون).",
+        "GoBackButton": "رجوع",
+        "NameLabel": "الاسم",
+        "NamePlaceholder": "أدخل الاسم الكامل",
+        "EmailLabel": "البريد الإلكتروني",
+        "EmailPlaceholder": "أدخل البريد الإلكتروني",
+        "RoleLabel": "مستوى الوصول",
+        "RolePlaceholder": "اختر مستوى الوصول",
+        "RolesList": {
+          "Teacher": "مدرّس",
+          "Recruiter": "مسؤول توظيف"
+        },
+        "SubmitButton": "إنشاء المستخدم"
+      }
+    },
+    "CountriesPage": {
+      "BreadCrumbTitle": "الدول",
+      "PageTitle": "الدول",
+      "NoCountryFound": "لم يتم العثور على دولة",
+      "Loading": "جاري تحميل الدول...",
+      "Error": "حدث خطأ أثناء تحميل الدول",
+      "Refresh": "تحديث",
+      "Header": {
+        "Badge": "إدارة • الجغرافيا"
+      },
+      "Table": {
+        "NoDataFound": "لم يتم العثور على بيانات",
+        "CountryNameColumn": "الدولة",
+        "CountryLocationColumn": "المجالس / المواقع",
+        "CountryCreatedAtColumn": "تاريخ الإنشاء",
+        "Actions": {
+          "DialogTitle": "تأكيد الحذف",
+          "DialogDescription": "هل أنت متأكد أنك تريد حذف هذه الدولة؟ لا يمكن التراجع عن هذا الإجراء.",
+          "EditAction": "تعديل الدولة",
+          "CopyIDAction": "نسخ معرّف الدولة",
+          "DeleteAction": "حذف الدولة",
+          "ViewDetailsAction": "تفاصيل الدولة",
+          "OnDeleteLoading": "جاري حذف الدولة...",
+          "OnDeleteSuccess": "تم حذف الدولة بنجاح!",
+          "OnDeleteError": "حدث خطأ أثناء حذف الدولة."
+        },
+        "Filters": {
+          "ByName": "تصفية بالاسم"
+        },
+        "Navigation": {
+          "Next": "التالي",
+          "Previous": "السابق"
+        }
+      },
+      "NewCountrySheet": {
+        "NewCountryButton": "دولة جديدة",
+        "Badge": "الجغرافيا • الإعدادات",
+        "Title": "إضافة دولة جديدة",
+        "Description": "املأ الحقول أدناه لإضافة دولة جديدة.",
+        "Form": {
+          "Loading": "جاري إضافة الدولة...",
+          "Success": "تمت إضافة الدولة بنجاح!",
+          "Error": {
+            "409": "توجد دولة بنفس الاسم بالفعل.",
+            "500": "حدث خطأ أثناء إضافة الدولة. يرجى المحاولة مرة أخرى."
+          },
+          "Title": "إضافة دولة",
+          "CountryNameLabel": "اسم الدولة",
+          "CountryNamePlaceholder": "موزمبيق",
+          "SubmitButton": "إضافة الدولة",
+          "CloseButton": "إغلاق"
+        }
+      },
+      "EditCountrySheet": {
+        "Title": "تعديل الدولة",
+        "Description": "املأ الحقول أدناه لتعديل الدولة.",
+        "Form": {
+          "Loading": "جاري تحديث البيانات...",
+          "Success": "تم تحديث البيانات بنجاح!",
+          "Error": {
+            "409": "توجد دولة بنفس الاسم بالفعل.",
+            "500": "حدث خطأ أثناء تحديث بيانات الدولة. يرجى المحاولة مرة أخرى."
+          },
+          "Title": "تعديل الدولة",
+          "CountryNameLabel": "اسم الدولة",
+          "CountryNamePlaceholder": "موزمبيق",
+          "SubmitButton": "حفظ التغييرات",
+          "CloseButton": "إغلاق"
+        }
+      }
+    },
+    "CountryDetailsPage": {
+      "LocationsNumberLabel1": "موقع / مجلس",
+      "LocationsNumberLabel2": "مواقع / مجالس",
+      "LocationsNotFound": "لا يوجد أي موقع/مجلس مسجّل لهذه الدولة.",
+      "CreateLocationSheet": {
+        "CreateLocationButton": "إنشاء موقع / مجلس",
+        "Title": "إضافة موقع / مجلس جديد",
+        "Description": "املأ الحقول أدناه لإضافة موقع / مجلس جديد.",
+        "Form": {
+          "Loading": "جاري إنشاء الموقع / المجلس...",
+          "Success": "تمت إضافة الموقع / المجلس بنجاح!",
+          "Error": {
+            "409": "يوجد موقع / مجلس بنفس الاسم في هذه الدولة بالفعل.",
+            "500": "حدث خطأ أثناء إضافة الموقع / المجلس. يرجى المحاولة مرة أخرى."
+          },
+          "Title": "إضافة موقع / مجلس",
+          "CountryNameLabel": "اسم الموقع / المجلس",
+          "CountryNamePlaceholder": "لشبونة",
+          "SubmitButton": "إنشاء موقع / مجلس",
+          "CloseButton": "إغلاق"
+        }
+      },
+      "EditLocationSheet": {
+        "CreateLocationButton": "تعديل موقع / مجلس",
+        "Title": "تعديل موقع / مجلس",
+        "Description": "املأ الحقول أدناه لتحديث تفاصيل الموقع / المجلس.",
+        "Form": {
+          "Loading": "جاري تعديل الموقع / المجلس...",
+          "Success": "تم تحديث الموقع / المجلس بنجاح!",
+          "Error": {
+            "409": "يوجد موقع / مجلس بنفس الاسم في هذه الدولة بالفعل.",
+            "500": "حدث خطأ أثناء تحديث الموقع / المجلس. يرجى المحاولة مرة أخرى."
+          },
+          "Title": "تعديل موقع / مجلس",
+          "CountryNameLabel": "اسم الموقع / المجلس",
+          "CountryNamePlaceholder": "لشبونة",
+          "SubmitButton": "حفظ التغييرات",
+          "CloseButton": "إغلاق"
+        }
+      },
+      "DeleteLocationDialog": {
+        "DialogTitle": "حذف موقع / مجلس",
+        "DialogDescription": "هل أنت متأكد أنك تريد حذف هذا الموقع / المجلس؟ هذا الإجراء غير قابل للتراجع.",
+        "OnDeleteLoading": "جاري حذف الموقع / المجلس...",
+        "OnDeleteSuccess": "تم حذف الموقع / المجلس بنجاح!",
+        "OnDeleteError": "حدث خطأ أثناء حذف الموقع / المجلس. يرجى المحاولة مرة أخرى."
+      }
+    },
+    "CoursesPage": {
+      "BreadCrumbTitle": "الدورات",
+      "Header": {
+        "Badge": "الأكاديمية • الدورات",
+        "Course": "دورة",
+        "Courses": "دورات"
+      },
+      "PageTitle": "الدورات",
+      "NoCourseFound": "لم يتم العثور على أي دورة",
+      "Loading": "جاري تحميل الدورات...",
+      "Error": "حدث خطأ أثناء تحميل الدورات",
+      "Refresh": "تحديث",
+      "Table": {
+        "NoDataFound": "لم يتم العثور على بيانات",
+        "CourseNameColumn": "الدورة",
+        "CourseModalityColumn": "النمط",
+        "ModalitiesList": {
+          "IN_PERSON": "حضوري",
+          "ONLINE": "عن بُعد",
+          "HYBRID": "هجين"
+        },
+        "CourseEditionsColumn": "عدد الإصدارات",
+        "CourseCreatedAtColumn": "تاريخ الإنشاء",
+        "Actions": {
+          "DialogTitle": "حذف الدورة",
+          "DialogDescription": "هل أنت متأكد أنك تريد حذف هذه الدورة؟ لا يمكن التراجع عن هذا الإجراء.",
+          "EditAction": "تعديل الدورة",
+          "CopyIDAction": "نسخ معرّف الدورة",
+          "DeleteAction": "حذف الدورة",
+          "ViewDetailsAction": "تفاصيل الدورة",
+          "OnDeleteLoading": "جاري حذف الدورة...",
+          "OnDeleteSuccess": "تم حذف الدورة بنجاح!",
+          "OnDeleteError": "حدث خطأ أثناء حذف الدورة."
+        },
+        "Filters": {
+          "ByName": "تصفية بالاسم"
+        },
+        "Navigation": {
+          "Next": "التالي",
+          "Previous": "السابق"
+        }
+      },
+      "NewCourseSheet": {
+        "NewCourseButton": "دورة جديدة",
+        "Badge": "الدورات • إنشاء",
+        "Title": "إضافة دورة جديدة",
+        "Description": "املأ الحقول أدناه لإضافة دورة جديدة.",
+        "Form": {
+          "Loading": "جاري إضافة الدورة...",
+          "Success": "تمت إضافة الدورة بنجاح!",
+          "Error": {
+            "409": "توجد دورة بنفس الاسم بالفعل.",
+            "500": "حدث خطأ أثناء إضافة الدورة. يرجى المحاولة مرة أخرى."
+          },
+          "Title": "إضافة دورة",
+          "CourseNameLabel": "اسم الدورة",
+          "CourseNamePlaceholder": "تطوير الويب",
+          "CourseModalityLabel": "النمط",
+          "CourseModalityPlaceholder": "اختر النمط",
+          "ModalitiesList": {
+            "InPerson": "حضوري",
+            "Online": "عن بُعد",
+            "Hybrid": "هجين"
+          },
+          "SubmitButton": "إضافة الدورة",
+          "CloseButton": "إغلاق"
+        }
+      },
+      "EditCourseSheet": {
+        "Title": "تعديل الدورة",
+        "Description": "املأ الحقول أدناه لتعديل الدورة.",
+        "Form": {
+          "Loading": "جاري تحديث البيانات...",
+          "Success": "تم تحديث البيانات بنجاح!",
+          "Error": {
+            "409": "توجد دورة بنفس الاسم بالفعل.",
+            "500": "حدث خطأ أثناء تحديث بيانات الدورة. يرجى المحاولة مرة أخرى."
+          },
+          "Title": "تعديل الدورة",
+          "CourseNameLabel": "اسم الدورة",
+          "CourseNamePlaceholder": "تطوير الويب",
+          "CourseModalityLabel": "النمط",
+          "CourseModalityPlaceholder": "اختر النمط",
+          "ModalitiesList": {
+            "InPerson": "حضوري",
+            "Online": "عن بُعد",
+            "Hybrid": "هجين"
+          },
+          "SubmitButton": "حفظ التغييرات",
+          "CloseButton": "إغلاق"
+        }
+      }
+    },
+    "EditionsPage": {
+      "BreadCrumbTitile": "الإصدارات",
+      "Header": {
+        "Badge": "الأكاديمية • الإصدارات",
+        "Edition": "إصدار",
+        "Editions": "إصدارات"
+      },
+      "PageTitle": "إصدارات البرنامج",
+      "NewEditionButton": "إصدار جديد",
+      "NoEditionsFound": "لم يتم العثور على أي إصدار",
+      "Error": "حدث خطأ أثناء تحميل الإصدارات",
+      "Refresh": "تحديث",
+      "Table": {
+        "NoDataFound": "لم يتم العثور على بيانات",
+        "EditionNumberColumn": "رقم الإصدار",
+        "EditionNameColumn": "اسم الإصدار",
+        "EditionCourseColumn": "الدورة",
+        "EditionYearColumn": "السنة",
+        "EditionCountryColumn": "الدولة",
+        "LocationColumn": "الموقع / المجلس",
+        "ApplicationsStatusColumn": "حالة التقديم",
+        "LessonsStatusColumn": "حالة الدروس",
+        "Actions": {
+          "DialogTitle": "تأكيد الحذف",
+          "DialogDescription": "هل أنت متأكد أنك تريد حذف هذا الإصدار؟ لا يمكن التراجع عن هذا الإجراء.",
+          "EditAction": "تعديل الإصدار",
+          "CopyIDAction": "نسخ معرّف الإصدار",
+          "DeleteAction": "حذف الإصدار",
+          "OnDeleteLoading": "جاري حذف الإصدار...",
+          "OnDeleteSuccess": "تم حذف الإصدار بنجاح!",
+          "OnDeleteError": "حدث خطأ أثناء حذف الإصدار."
+        },
+        "ApplicationsStatus": {
+          "OPEN": "مفتوح",
+          "CLOSED": "مغلق"
+        },
+        "LessonsStatus": {
+          "OPEN": "مفتوح",
+          "CLOSED": "مغلق"
+        },
+        "Filters": {
+          "ByCourse": "تصفية حسب الدورة",
+          "ByApplicationStatus": {
+            "Placeholder": "حالة التقديم",
+            "ALL": "الكل",
+            "OPEN": "مفتوح",
+            "CLOSED": "مغلق"
+          },
+          "ByLessonsStatus": {
+            "Placeholder": "حالة الدروس",
+            "ALL": "الكل",
+            "OPEN": "مفتوح",
+            "CLOSED": "مغلق"
+          }
+        },
+        "Navigation": {
+          "Next": "التالي",
+          "Previous": "السابق"
+        }
+      },
+      "CreateEditionSheet": {
+        "Title": "إنشاء إصدار جديد",
+        "Description": "املأ الحقول أدناه لإنشاء إصدار جديد.",
+        "Form": {
+          "Loading": "جاري إنشاء إصدار جديد...",
+          "Success": "تم إنشاء الإصدار بنجاح!",
+          "Error": "حدث خطأ أثناء إنشاء الإصدار. يرجى المحاولة مرة أخرى.",
+          "ConflictError": "يوجد إصدار بنفس الاسم وفي نفس المدينة ولنفس الدورة بالفعل.",
+          "Title": "إنشاء إصدار جديد",
+          "LoadingCourses": "جاري تحميل الدورات...",
+          "NoCoursesFound": "لم يتم العثور على أي دورة",
+          "LoadingCountries": "جاري تحميل الدول...",
+          "NoCountriesFound": "لم يتم العثور على أي دولة",
+          "SelectCountryFirst": "يرجى اختيار الدولة أولاً",
+          "NoLocationsFound": "لم يتم العثور على مواقع في هذه الدولة",
+          "EditionNumberLabel": "رقم الإصدار",
+          "EditionNumberPlaceholder": "1",
+          "EditionNameLabel": "اسم الإصدار",
+          "EditionNamePlaceholder": "الإصدار الأول",
+          "EditionCourseLabel": "الدورة",
+          "EditionCoursePlaceholder": "اختر الدورة",
+          "EditionYearLabel": "سنة الإصدار",
+          "EditionYearPlaceholder": "اختر السنة",
+          "EditionCountryLabel": "الدولة",
+          "EditionCountryPlaceholder": "اختر الدولة",
+          "EditionLocationLabel": "الموقع / المقاطعة",
+          "EditionLocationPlaceholder": "اختر الموقع / المقاطعة",
+          "SubmitButton": "إنشاء الإصدار",
+          "CloseButton": "إغلاق"
+        }
+      },
+      "EditEditionSheet": {
+        "Title": "تعديل الإصدار",
+        "Description": "املأ الحقول أدناه لتعديل الإصدار.",
+        "Form": {
+          "Loading": "جاري تعديل الإصدار...",
+          "Success": "تم تعديل الإصدار بنجاح!",
+          "Error": "حدث خطأ أثناء تعديل الإصدار. يرجى المحاولة مرة أخرى.",
+          "ConflictError": "يوجد إصدار بنفس الاسم وفي نفس المدينة ولنفس الدورة بالفعل.",
+          "Title": "تعديل الإصدار",
+          "EditionNumberLabel": "رقم الإصدار",
+          "EditionNumberPlaceholder": "1",
+          "EditionNameLabel": "اسم الإصدار",
+          "EditionNamePlaceholder": "الإصدار الأول",
+          "EditionCourseLabel": "الدورة",
+          "EditionCoursePlaceholder": "اختر الدورة",
+          "EditionYearLabel": "سنة الإصدار",
+          "EditionYearPlaceholder": "اختر السنة",
+          "EditionCountryLabel": "الدولة",
+          "EditionCountryPlaceholder": "اختر الدولة",
+          "EditionLocationLabel": "الموقع / المقاطعة",
+          "EditionLocationPlaceholder": "اختر الموقع / المقاطعة",
+          "EditionApplicationsStatusLabel": "حالة التقديم",
+          "EditionLessonsStatusLabel": "حالة الدروس",
+          "Status": {
+            "Open": "مفتوح",
+            "Closed": "مغلق"
+          },
+          "SubmitButton": "حفظ التغييرات",
+          "CloseButton": "إغلاق"
+        }
+      }
+    },
+    "CandidatesPage": {
+      "BreadCrumbTitile": "المرشحون",
+      "PageTitle": "الطلبات المُقدّمة",
+      "Subtitle": "صفِّ وراقب حالة الطلبات.",
+      "NoSelectedEditionTitle": "لم يتم اختيار إصدار",
+      "NoSelectedEditionText": "اختر إصداراً من أعلى الشريط الجانبي لعرض المرشحين.",
+      "NoCandidatesFound": "لم يتم العثور على أي مرشح في هذا الإصدار",
+      "Error": "حدث خطأ أثناء تحميل المرشحين",
+      "Refresh": "تحديث",
+      "Table": {
+        "NoDataFound": "لم يتم العثور على بيانات",
+        "NameColumn": "الاسم",
+        "EmailColumn": "البريد الإلكتروني",
+        "PhoneColumn": "الهاتف",
+        "ApplicationStatusColumn": "حالة الطلب:",
+        "ApplicationDateColumn": "تاريخ التقديم",
+        "Actions": "الإجراءات",
+        "EditAction": "تعديل",
+        "CopyIDAction": "نسخ معرّف المرشح",
+        "ViewCandidateDetailsAction": "عرض تفاصيل المرشح",
+        "Filters": {
+          "ByCandidate": "تصفية المرشح",
+          "ByApplicationStatus": {
+            "Placeholder": "حالة الطلب",
+            "ALL": "الكل",
+            "PENDING": "قيد الانتظار",
+            "INTERVIEW_CONFIRMED": "تم تأكيد المقابلة",
+            "INTERVIEW_SCHEDULED": "تمت جدولة المقابلة",
+            "ADMITTED": "مقبول",
+            "NOT_ADMITTED": "غير مقبول"
+          }
+        },
+        "Navigation": {
+          "Next": "التالي",
+          "Previous": "السابق"
+        }
+      }
+    },
+    "InterviewsPage": {
+      "BreadCrumbTitile": "المقابلات",
+      "PageTitle": "المقابلات المجدولة",
+      "Subtitle": "صفِّ، تتبّع النتائج، وادخل سريعاً إلى المرشح.",
+      "NoEditionSelected": "لم يتم اختيار إصدار",
+      "NoEditionSelectedHint": "اختر إصداراً من أعلى الشريط الجانبي لعرض المقابلات.",
+      "NoInterviewsFound": "لا توجد مقابلات مجدولة لهذا الإصدار",
+      "Error": "حدث خطأ أثناء تحميل المقابلات",
+      "Refresh": "تحديث",
+      "InterviewBookinkLink": "رابط جدولة المقابلات:",
+      "BookingDialog": {
+        "TriggerButton": "إضافة رابط جدولة المقابلات",
+        "Title": "رابط جدولة المقابلات",
+        "Description": "أدخل رابط جدولة المقابلات للإصدار الحالي.",
+        "InputLabel": "رابط جدولة المقابلات",
+        "InputPlaceholder": "https://calendly.com/...",
+        "UpdateButtonLabel": "تحديث",
+        "SaveButtonLabel": "حفظ",
+        "OnSubmitSaveLoading": "جاري حفظ الرابط...",
+        "OnSubmitSaveSuccess": "تم حفظ الرابط بنجاح!",
+        "OnSubmitSaveError": "حدث خطأ أثناء حفظ الرابط. يرجى المحاولة مرة أخرى.",
+        "OnSubmitUpdateLoading": "جاري تحديث الرابط...",
+        "OnSubmitUpdateSuccess": "تم تحديث الرابط بنجاح!",
+        "OnSubmitUpdateError": "حدث خطأ أثناء تحديث الرابط. يرجى المحاولة مرة أخرى."
+      },
+      "Table": {
+        "NoDataFound": "لم يتم العثور على بيانات",
+        "CandidateNameColumn": "الاسم",
+        "ApplicationStatusColumn": "حالة الطلب",
+        "InterviewResultColumn": "نتيجة المقابلة",
+        "InterviewDateColumn": "تاريخ المقابلة",
+        "CandidatePhoneColumn": "رقم الهاتف",
+        "CandidateEmailColumn": "البريد الإلكتروني",
+        "Actions": "الإجراءات",
+        "CopyIDAction": "نسخ معرّف المقابلة",
+        "ViewInterviewDetailsAction": "عرض تفاصيل المقابلة",
+        "InterviewStatus": {
+          "CONFIRMED": "تم تأكيد المقابلة",
+          "SCHEDULED": "تمت جدولة المقابلة",
+          "FINISHED": "انتهت"
+        },
+        "InterviewResult": {
+          "PENDING": "قيد الانتظار",
+          "ADMITTED": "مقبول",
+          "NOT_ADMITTED": "غير مقبول"
+        },
+        "Filters": {
+          "ByCandidate": "تصفية المرشح",
+          "ByInterviewStatus": {
+            "Placeholder": "حالة المقابلة",
+            "ALL": "الكل",
+            "CONFIRMED": "تم تأكيد المقابلة",
+            "SCHEDULED": "تمت جدولة المقابلة",
+            "FINISHED": "انتهت"
+          },
+          "ByInterviewResult": {
+            "Placeholder": "نتيجة المقابلة",
+            "ALL": "الكل",
+            "PENDING": "قيد الانتظار",
+            "ADMITTED": "مقبول",
+            "NOT_ADMITTED": "غير مقبول"
+          }
+        },
+        "Navigation": {
+          "Next": "التالي",
+          "Previous": "السابق"
+        }
+      }
+    },
+    "InterviewDetailsPage": {
+      "Badge": "تفاصيل المقابلة",
+      "Subtitle": "اطّلع على بيانات المرشح وحالة ونتيجة المقابلة.",
+      "InterviewNotFound": "المقابلة غير موجودة",
+      "FetchInterviewError": "حدث خطأ أثناء تحميل المقابلة",
+      "Refresh": "تحديث",
+      "Labels": {
+        "PhoneLabel": "الهاتف",
+        "LocationLabel": "الموقع/المجلس",
+        "AgeLabel": "العمر",
+        "CourseLabel": "الدورة"
+      },
+      "InterviewStatusLabel": "حالة الطلب:",
+      "InterviewStatus": {
+        "CONFIRMED": "تم تأكيد المقابلة",
+        "SCHEDULED": "تمت جدولة المقابلة",
+        "FINISHED": "انتهت"
+      },
+      "InterviewResultLabel": "نتيجة المقابلة:",
+      "InterviewResult": {
+        "PENDING": "قيد الانتظار",
+        "ADMITTED": "مقبول",
+        "NOT_ADMITTED": "غير مقبول"
+      },
+      "YearsOld": "سنة",
+      "Motivation": "الدافع",
+      "InterviewObservations": "ملاحظات المقابلة",
+      "ApplicationScheduleLink": "قم بجدولة مقابلتك عبر الرابط أدناه:",
+      "CreateStudentForm": {
+        "OnSubmitLoading": "جاري المعالجة..",
+        "OnSubmitSuccess": "تم إسناد الفصل بنجاح!",
+        "OnSubmitError": "حدث خطأ أثناء إسناد الفصل. يرجى المحاولة مرة أخرى.",
+        "AssignClass": "إسناد فصل",
+        "ClassesList": {
+          "Loading": "جاري تحميل الفصول...",
+          "NoClassesFound": "لم يتم العثور على أي فصل",
+          "InputPlaceHolder": "اختر فصلاً"
+        },
+        "ClassShift": {
+          "MORNING": "صباحاً",
+          "AFTERNOON": "بعد الظهر"
+        },
+        "SubmitButton": "حفظ"
+      },
+      "EndInterviewForm": {
+        "OnSubmitLoading": "جاري المعالجة...",
+        "OnSubmitSuccess": "تم إنهاء المقابلة بنجاح!",
+        "OnSubmitError": "حدث خطأ أثناء إنهاء المقابلة. يرجى المحاولة مرة أخرى.",
+        "InterviewObservationsLabel": "ملاحظات المقابلة",
+        "InterviewObservationsPlaceholder": "أدخل ملاحظاتك هنا",
+        "InterviewResultLabel": "نتيجة المقابلة",
+        "InterviewResultPlaceholder": "اختر النتيجة",
+        "InterviewResultsList": {
+          "Admitted": "مقبول",
+          "NotAdmitted": "غير مقبول"
+        },
+        "SubmitButton": "إنهاء المقابلة"
+      },
+      "ViewInterviewGuide": "عرض دليل المقابلة"
+    },
+    "ClassesPage": {
+      "BreadCrumbTitile": "الفصول",
+      "PageTitle": "الفصول",
+      "Subtitle": "إدارة فصول الإصدار: الفترات، السعة، والطلاب.",
+      "NoEditionSelectedTitle": "لم يتم اختيار إصدار",
+      "NoEditionSelectedDescription": "اختر إصداراً من أعلى الشريط الجانبي لعرض الفصول.",
+      "NoClassesFound": "لم يتم العثور على أي فصل",
+      "NoClassesFoundInEdition": "لم يتم العثور على أي فصل في هذا الإصدار",
+      "NoDataFound": "لم يتم العثور على بيانات",
+      "Error": "حدث خطأ أثناء تحميل الفصول",
+      "Refresh": "تحديث",
+      "CreateClassButton": "إنشاء فصل",
+      "Table": {
+        "ClassEditionColumn": "الإصدار",
+        "ClassLocationColumn": "الموقع",
+        "ClassShiftColumn": "الفترة",
+        "ClassShift": {
+          "MORNING": "صباحاً",
+          "AFTERNOON": "بعد الظهر"
+        },
+        "ClassCapacityColumn": "السعة",
+        "Students": "طلاب",
+        "ClassInstructorColumn": "المدرب",
+        "ClassStudentsColumn": "عدد الطلاب",
+        "Actions": {
+          "Label": "الإجراءات",
+          "OpenMenu": "فتح القائمة",
+          "EditAction": "تعديل الفصل",
+          "CopyIDAction": "نسخ معرّف الفصل",
+          "ViewDetailsAction": "عرض تفاصيل الفصل"
+        },
+        "Filters": {
+          "ByEdition": "تصفية حسب الإصدار",
+          "ByShift": {
+            "Placeholder": "تصفية حسب الفترة...",
+            "ALL": "الكل",
+            "MORNING": "صباحاً",
+            "AFTERNOON": "بعد الظهر"
+          }
+        },
+        "Navigation": {
+          "Next": "التالي",
+          "Previous": "السابق"
+        }
+      }
+    },
+    "CreateClassPage": {
+      "Form": {
+        "OnSubmitLoading": "جاري إنشاء الفصل...",
+        "OnSubmitSuccess": "تم إنشاء الفصل بنجاح!",
+        "OnSubmitError": "حدث خطأ أثناء إنشاء الفصل. يرجى المحاولة مرة أخرى.",
+        "Title": "إنشاء فصل جديد",
+        "Subtitle": "حدد الفترة والسعة للفصل الجديد.",
+        "ShiftLabel": "الفترة",
+        "ShiftPlaceholder": "اختر الفترة",
+        "Shifts": {
+          "Morning": "صباحاً",
+          "Afternoon": "بعد الظهر"
+        },
+        "CapacityLabel": "السعة",
+        "CapacityPlaceholder": "أدخل السعة القصوى للطلاب",
+        "SubmitButton": "إنشاء الفصل"
+      }
+    },
+    "ClassDetailsPage": {
+      "ClassNotFound": "الفصل غير موجود",
+      "FetchClassError": "حدث خطأ أثناء تحميل الفصل",
+      "Refresh": "تحديث",
+      "NoStudentsEnrolled": "لم يتم العثور على طلاب في هذا الفصل",
+      "Title": "فصل {shift}",
+      "Subtitle": "قائمة الطلاب المسجلين في هذا الفصل.",
+      "Students": "الطلاب",
+      "ClassCapacity": "السعة",
+      "StudentsEnrolled": "الطلاب المسجلون",
+      "Shifts": {
+        "MORNING": "صباحاً",
+        "AFTERNOON": "بعد الظهر",
+        "NIGHT": "ليلاً"
+      }
+    },
+    "SupportPage": {
+      "BreadCrumbTitile": "الدعم",
+      "PageTitle": "مركز الدعم",
+      "HelpCenterSubtitle": "نحن هنا لمساعدتك!\nأرسل لنا رسالة وسنرد عليك في أقرب وقت ممكن.",
+      "Form": {
+        "OnSubmitLoading": "جاري إرسال الرسالة...",
+        "OnSubmitSuccess": "تم إرسال الرسالة بنجاح!",
+        "OnSubmitError": "حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.",
+        "NameLabel": "الاسم",
+        "NamePlaceholder": "أدخل اسمك الكامل",
+        "EmailLabel": "البريد الإلكتروني",
+        "EmailPlaceholder": "أدخل بريدك الإلكتروني",
+        "SubjectLabel": "الموضوع",
+        "SubjectPlaceholder": "أدخل موضوع رسالتك",
+        "MessageLabel": "الرسالة",
+        "MessagePlaceholder": "اكتب رسالتك هنا",
+        "ResetButton": "مسح النموذج",
+        "SubmitButton": "إرسال الرسالة"
+      }
+    },
+    "UserDialog": {
+      "ProfileLink": "الملف الشخصي",
+      "SignOutLink": "تسجيل الخروج"
+    }
+  }
+}

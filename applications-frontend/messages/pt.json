@@ -1,0 +1,832 @@
+{
+  "Public": {
+    "HomePage": {
+      "NavBar": {
+        "B4F": "BYTES4FUTURE",
+        "Program": "PROGRAMA",
+        "Purpose": "PROPÓSITO",
+        "FAQ": "PERGUNTAS FREQUENTES"
+      },
+      "Title": "Entra no Mundo Digital",
+      "Subtitle": "UPskill your career!",
+      "ApplicationButton": "CANDIDATAR-ME",
+      "ApplicationStatusButton": "VER ESTADO DA CANDIDATURA"
+    },
+    "ApplicationPage": {
+      "EditionNotFound": "Nenhuma edição aberta para candidaturas no momento",
+      "Form": {
+        "Processing": "A processar candidatura...",
+        "Success": "Candidatura submetida com sucesso!",
+        "Error": "Ocorreu um erro ao submeter candidatura. Tente novamente.",
+        "Title": "Candidate-se ao ",
+        "NameLabel": "Nome",
+        "NamePlaceholder": "Insira o seu nome completo",
+        "BirthDateLabel": "Data de nascimento",
+        "BirthDatePlaceholder": "Selecione uma data",
+        "GenderLabel": "Género",
+        "GenderPlaceholder": "Selecione o género",
+        "GendersList": {
+          "Male": "Masculino",
+          "Female": "Feminino",
+          "Other": "Outro"
+        },
+        "EmailLabel": "Email",
+        "EmailPlaceholder": "Insira o seu email",
+        "PhoneLabel": "Número de celular",
+        "PhonePlaceholder": "Insira o seu número de celular",
+        "WhatsAppLabel": "WhatsApp (opcional)",
+        "WhatsAppPlaceholder": "Insira o seu WhatsApp",
+        "CountryLabel": "País",
+        "CountryPlaceholder": "Selecione o país",
+        "CourseLabel": "Curso",
+        "CoursePlaceholder": "Selecione o curso",
+        "SelectCountryFirst": "Selecione um país primeiro",
+        "LocationLabel": "Local/Conselho",
+        "LocationPlaceholder": "Selecione o local/conselho",
+        "MotivationLabel": "Motivação",
+        "MotivationPlaceholder": "O que levou-te a candidatar-se ao programa?",
+        "SendButton": "Enviar"
+      }
+    },
+    "CandidateSearchPage": {
+      "InputPlaceholder": "Introduza o seu código de candidato",
+      "SearchButton": "Pesquisar",
+      "CandidateNotFound": "Candidato não encontrado",
+      "NoCandidatesFound": "Nenhum candidato encontrado",
+      "Error": "Ocorreu um erro ao carregar candidatos",
+      "Refresh": "Recarregar"
+    },
+    "CandidateDetailsPage": {
+      "Badge": "Course",
+      "Labels": {
+        "PhoneLabel": "Telefone",
+        "LocationLabel": "Local/Conselho",
+        "AgeLabel": "Idade",
+        "CourseLabel": "Curso"
+      },
+      "Loading": "A concluir candidatura...",
+      "Success": "Candidatura concluida com sucesso!",
+      "Error": "Ocorreu um erro ao concluir entrevista. Tente novamente.",
+      "CandidateNotFound": "Candidato não encontrado",
+      "FetchCandidateError": "Ocorreu um erro ao carregar candidato",
+      "Refresh": "Recarregar",
+      "ApplicationStatusLabel": "Estado da candidatura:",
+      "ApplicationStatus": {
+        "PENDING": "Pendente",
+        "INTERVIEW_SCHEDULED": "Entrevista agendada",
+        "ADMITTED": "Admitido",
+        "NOT_ADMITTED": "Não Admitido"
+      },
+      "YearsOld": "Anos",
+      "Motivation": "Motivação",
+      "ApplicationScheduleLink": "Agende a sua entrevista no link abaixo:",
+      "FinshScheduleLabel": "Após agendar a entrevista, clique no botão \"Colcuir entrevista\" para concluir.",
+      "FinshScheduleButton": "Concluir candidatura"
+    },
+    "SignInPage": {
+      "Loading": "A iniciar sessão...",
+      "Success": "Sessão iniciada com sucesso!",
+      "InvalidCredentials": "Credenciais inválidas. Tente novamente.",
+      "Error": "Ocorreu um erro ao iniciar sessão. Tente novamente.",
+      "Form": {
+        "Badge": "Plataforma de gestão de candidaturas",
+        "Title": "Bem-vindo(a) de volta",
+        "Subtitle": "Entre no Dashboard de candidaturas do Bytes4Future",
+        "EmailLabel": "E-mail",
+        "EmailPlaceholder": "Insira o seu e-mail",
+        "PasswordLabel": "Palavra-passe",
+        "PasswordPlaceholder": "Insira a sua palavra-passe",
+        "ForgotPassword": "Esqueceu-se da palavra-passe?",
+        "SubmitButton": "Iniciar Sessão"
+      },
+      "Card": {
+        "Welcome": "Bem-vindo(a0 ao",
+        "Title": "Aprenda. Construa. Lance.",
+        "Intro": "Uma experiência moderna para formação em tecnologia — cursos, edições, turmas, candidaturas e acompanhamento em um só lugar.",
+        "Modules": {
+          "Dashboards": "Dashboards",
+          "ApplicationsManagement": "Gestão de candidaturas",
+          "LessonsManagement": "Gestão de aulas"
+        },
+        "Copyright": "Todos os direitos reservados"
+      }
+    }
+  },
+  "Dashboard": {
+    "SideBar": {
+      "Overview": "Visão Geral",
+      "Users": "Usuários",
+      "Courses": "Cursos",
+      "Countries": "Países",
+      "Editions": "Edições",
+      "Candidates": "Candidatos",
+      "Interviews": "Entrevistas",
+      "Classes": "Turmas",
+      "Support": "Suporte"
+    },
+    "ConfirmDialog": {
+      "Confirm": "Confirmar",
+      "Cancel": "Cancelar"
+    },
+    "OverviewPage": {
+      "BreadCrumbTitile": "Visão Geral",
+      "Subtitle": "Acompanhe métricas e tendências das candidaturas na edição seleccionada.",
+      "ExportButton": {
+        "Label": "Exportar",
+        "Loading": "A exportar..."
+      },
+      "NoDataFound": "Nenhum dado encontrado",
+      "NoDataFoundInEdition": "Nenhum dado encontrado nesta edição",
+      "Refresh": "Recarregar",
+      "TotalCandidates": "Total de Candidatos",
+      "FemaleCandidates": "Candidatos do Sexo Feminino",
+      "MaleCandidates": "Candidatos do Sexo Masculino",
+      "AdmittedCandidates": "Candidatos Admitidos",
+      "FemaleAdmittedCandidates": "Candidatos Admitidos do Sexo Feminino",
+      "MaleAdmittedCandidates": "Candidatos Admitidos do Sexo Masculino",
+      "InterviewedCandidates": "Candidatos Entrevistados",
+      "NotInterviewedCandidates": "Candidatos Não Entrevistados",
+      "CandidatesByGenderChartTitle": "Distribuição de candidatos por Género",
+      "CandidatesByStatusChartTitle": "Distribuição de candidatos por Estado da Candidatura",
+      "AdmittedCandidatesByGenderChartTitle": "Candidatos Admitidos por Género",
+      "AdmittedRate": "Taxa de Admissão",
+      "NotAdmittedRate": "Taxa de Não Admissão",
+      "ApplicationsEvolutionChartTitle": "Evolução de candidaturas por período",
+      "CandidatesTerritorialDistribution": {
+        "Title": "Distribuição Territorial dos Candidatos",
+        "Table": {
+          "Location": "Local",
+          "Total": "Total",
+          "GrandTotal": "Total Geral"
+        }
+      }
+    },
+    "UsersPage": {
+      "BreadCrumbTitile": "Usuários",
+      "PageTitle": "Usuários da Plataforma",
+      "NewUserButton": "Novo Usuário",
+      "HeaderActions": {
+        "Badge": "Gestão • Usuários",
+        "User": "Usuário",
+        "Users": "Usuários"
+      },
+      "NoUsersFound": "Nenhum usuário encontrado",
+      "Loading": "A carregar usuários...",
+      "Error": "Ocorreu um erro ao carregar usuários",
+      "Refresh": "Recarregar",
+      "Table": {
+        "NoDataFound": "Nenhum dado encontrado",
+        "NameColumn": "Nome",
+        "EmailColumn": "E-mail",
+        "RoleColumn": "Nível de Acesso",
+        "UserRoles": {
+          "ADMIN": "Administrador",
+          "RECRUITER": "Recrutador",
+          "TEACHER": "Professor",
+          "STUDENT": "Estudante",
+          "ALUMNI": "Alumni"
+        },
+        "ActionsColumn": "Ações",
+        "EditAction": "Editar",
+        "CopyIDAction": "Copiar ID do usuário",
+        "DeleteAction": "Eliminar usuário",
+        "Filters": {
+          "ByName": "Filtrar nome",
+          "ByRole": "Filtrar nível de permissão"
+        },
+        "Navigation": {
+          "Next": "Próximo",
+          "Previous": "Anterior"
+        }
+      }
+    },
+    "CreateUserPage": {
+      "Form": {
+        "Badge": "Administrador • Gestão de usuário",
+        "Loading": "A criar novo usuário...",
+        "Success": "Usuário criado com sucesso!",
+        "Error": "Ocorreu um erro ao criar usuário. Tente novamente.",
+        "Title": "Criar novo usuário",
+        "Subtitle": "Crie contas para a equipa (recrutadores e formadores).",
+        "GoBackButton": "Voltar",
+        "NameLabel": "Nome",
+        "NamePlaceholder": "Insira o nome completo",
+        "EmailLabel": "Email",
+        "EmailPlaceholder": "Insira o email",
+        "RoleLabel": "Nível de Acesso",
+        "RolePlaceholder": "Selecione o nível de acesso",
+        "RolesList": {
+          "Teacher": "Professor",
+          "Recruiter": "Recrutador"
+        },
+        "SubmitButton": "Criar Usuário"
+      }
+    },
+    "CountriesPage": {
+      "BreadCrumbTitle": "Países",
+      "PageTitle": "Países ",
+      "NoCountryFound": "Nenhuma país encontrado",
+      "Loading": "A carregar países...",
+      "Error": "Ocorreu um erro ao carregar países",
+      "Refresh": "Recarregar",
+      "Header": {
+        "Badge": "Gestão • Geografia"
+      },
+      "Table": {
+        "NoDataFound": "Nenhum dado encontrado",
+        "CountryNameColumn": "País",
+        "CountryLocationColumn": "Conselhos / Locais",
+        "CountryCreatedAtColumn": "Data de criação",
+        "Actions": {
+          "DialogTitle": "Confirmação de eliminação",
+          "DialogDescription": "Tem a certeza que deseja eliminar esta país? Esta ação não pode ser desfeita.",
+          "EditAction": "Editar país",
+          "CopyIDAction": "Copiar ID da país",
+          "DeleteAction": "Eliminar país",
+          "ViewDetailsAction": "Detalhes do país",
+          "OnDeleteLoading": "A eliminar país...",
+          "OnDeleteSuccess": "País eliminado com sucesso!",
+          "OnDeleteError": "Ocorreu um erro ao eliminar país."
+        },
+        "Filters": {
+          "ByName": "Filtrar nome"
+        },
+        "Navigation": {
+          "Next": "Próximo",
+          "Previous": "Anterior"
+        }
+      },
+      "NewCountrySheet": {
+        "NewCountryButton": "Novo País",
+        "Badge": "Geografia • Configuração",
+        "Title": "Adicionar novo País",
+        "Description": "Preencha os campos abaixo para adicionar novo país.",
+        "Form": {
+          "Loading": "A adicionar país...",
+          "Success": "País adicionado com sucesso!",
+          "Error": {
+            "409": "Já existe um país com o mesmo nome.",
+            "500": "Ocorreu um erro ao adicionar país. Tente novamente."
+          },
+          "Title": "Adicionar País",
+          "CountryNameLabel": "Nome do país",
+          "CountryNamePlaceholder": "Moçambique",
+          "SubmitButton": "Adicionar país",
+          "CloseButton": "Fechar"
+        }
+      },
+      "EditCountrySheet": {
+        "Title": "Editar País",
+        "Description": "Preencha os campos abaixo para editar o país.",
+        "Form": {
+          "Loading": "A Actualizar dados...",
+          "Success": "Dados actualizados com sucesso!",
+          "Error": {
+            "409": "Já existe um país com o mesmo nome.",
+            "500": "Ocorreu um erro ao actualizar dados do país. Tente novamente."
+          },
+          "Title": "Editar País",
+          "CountryNameLabel": "Nome do país",
+          "CountryNamePlaceholder": "Moçambique",
+          "SubmitButton": "Guardar Alterações",
+          "CloseButton": "Fechar"
+        }
+      }
+    },
+    "CountryDetailsPage": {
+      "LocationsNumberLabel1": "local / conselho",
+      "LocationsNumberLabel2": "locais / conselhos",
+      "LocationsNotFound": " Nenhum local/concelho cadastrado para este país.",
+      "CreateLocationSheet": {
+        "CreateLocationButton": "Criar Local / conselho",
+        "Title": "Adicionar novo local / conselho",
+        "Description": "Preencha os campos abaixo para adicionar novo local / conselho.",
+        "Form": {
+          "Loading": "A criar local / conselho...",
+          "Success": "Local / conselho adicionado com sucesso!",
+          "Error": {
+            "409": "Já existe um local / conselho com o mesmo nome no mesmo país.",
+            "500": "Ocorreu um erro ao adicionar local / conselho. Tente novamente."
+          },
+          "Title": "Adicionar Local / Conselho",
+          "CountryNameLabel": "Nome do local / conselho",
+          "CountryNamePlaceholder": "Lisboa",
+          "SubmitButton": "Criar local / conselho",
+          "CloseButton": "Fechar"
+        }
+      },
+      "EditLocationSheet": {
+        "CreateLocationButton": "Editar Local / conselho",
+        "Title": "Editar local / conselho",
+        "Description": "Preencha os campos abaixo para actualizar os dados do local / conselho.",
+        "Form": {
+          "Loading": "A editar local / conselho...",
+          "Success": "Local / conselho actualizado com sucesso!",
+          "Error": {
+            "409": "Já existe um local / conselho com o mesmo nome no mesmo país.",
+            "500": "Ocorreu um erro ao actualizar local / conselho. Tente novamente."
+          },
+          "Title": "Editar Local / Conselho",
+          "CountryNameLabel": "Nome do local / conselho",
+          "CountryNamePlaceholder": "Lisboa",
+          "SubmitButton": "Guardar Alterações",
+          "CloseButton": "Fechar"
+        }
+      },
+      "DeleteLocationDialog": {
+        "DialogTitle": "Eliminar local / conselho",
+        "DialogDescription": "Tem certeza que deseja eliminar este local / conselho? Esta acção é irreversível.",
+        "OnDeleteLoading": "A eliminar local / conselho...",
+        "OnDeleteSuccess": "Local / conselho eliminada com sucesso!",
+        "OnDeleteError": "Ocorreu um erro ao eliminar local / conselho. Tente de novo."
+      }
+    },
+    "CoursesPage": {
+      "BreadCrumbTitle": "Cursos",
+      "Header": {
+        "Badge": "Academia • Cursos",
+        "Course": "Curso",
+        "Courses": "Cursos"
+      },
+      "PageTitle": "Cursos ",
+      "NoCourseFound": "Nenhuma Curso encontrado",
+      "Loading": "A caregar cursos...",
+      "Error": "Ocorreu um erro ao carregar cursos",
+      "Refresh": "Recarregar",
+      "Table": {
+        "NoDataFound": "Nenhum dado encontrado",
+        "CourseNameColumn": "Curso",
+        "CourseModalityColumn": "Modalidade",
+        "ModalitiesList": {
+          "IN_PERSON": "Presencial",
+          "ONLINE": "Online",
+          "HYBRID": "Híbrido"
+        },
+        "CourseEditionsColumn": "Número de edições",
+        "CourseCreatedAtColumn": "Data de criação",
+        "Actions": {
+          "DialogTitle": "Eliminar curso",
+          "DialogDescription": "Tem a certeza que deseja eliminar este curso? Esta ação não pode ser desfeita.",
+          "EditAction": "Editar Curso",
+          "CopyIDAction": "Copiar ID da curso",
+          "DeleteAction": "Eliminar curso",
+          "ViewDetailsAction": "Detalhes do curso",
+          "OnDeleteLoading": "A eliminar curso...",
+          "OnDeleteSuccess": "Curso eliminado com sucesso!",
+          "OnDeleteError": "Ocorreu um erro ao eliminar curso."
+        },
+        "Filters": {
+          "ByName": "Filtrar nome"
+        },
+        "Navigation": {
+          "Next": "Próximo",
+          "Previous": "Anterior"
+        }
+      },
+      "NewCourseSheet": {
+        "NewCourseButton": "Novo curso",
+        "Badge": "Cursos • Criar",
+        "Title": "Adicionar novo curso",
+        "Description": "Preencha os campos abaixo para adicionar novo curso.",
+        "Form": {
+          "Loading": "A adicionar curso...",
+          "Success": "Curso adicionado com sucesso!",
+          "Error": {
+            "409": "Já existe um curso com o mesmo nome.",
+            "500": "Ocorreu um erro ao adicionar curso. Tente novamente."
+          },
+          "Title": "Adicionar curso",
+          "CourseNameLabel": "Nome do curso",
+          "CourseNamePlaceholder": "Programação Web",
+          "CourseModalityLabel": "Modalidade",
+          "CourseModalityPlaceholder": "Selecione a modalidade",
+          "ModalitiesList": {
+            "InPerson": "Presencial",
+            "Online": "Online",
+            "Hybrid": "Híbrido"
+          },
+          "SubmitButton": "Adicionar curso",
+          "CloseButton": "Fechar"
+        }
+      },
+      "EditCourseSheet": {
+        "Title": "Editar Curso",
+        "Description": "Preencha os campos abaixo para editar o curso.",
+        "Form": {
+          "Loading": "A Actualizar dados...",
+          "Success": "Dados actualizados com sucesso!",
+          "Error": {
+            "409": "Já existe um curso com o mesmo nome.",
+            "500": "Ocorreu um erro ao actualizar dados do curso. Tente novamente."
+          },
+          "Title": "Editar curso",
+          "CourseNameLabel": "Nome do curso",
+          "CourseNamePlaceholder": "Programação Web",
+          "CourseModalityLabel": "Modalidade",
+          "CourseModalityPlaceholder": "Selecione a modalidade",
+          "ModalitiesList": {
+            "InPerson": "Presencial",
+            "Online": "Online",
+            "Hybrid": "Híbrido"
+          },
+          "SubmitButton": "Guardar Alterações",
+          "CloseButton": "Fechar"
+        }
+      }
+    },
+    "EditionsPage": {
+      "BreadCrumbTitile": "Edições",
+      "Header": {
+        "Badge": "Academina • Edições",
+        "Edition": "Edição",
+        "Editions": "Edições"
+      },
+      "PageTitle": "Edições do Programa",
+      "NewEditionButton": "Nova Edição",
+      "NoEditionsFound": "Nenhuma edição encontrada",
+      "Error": "Ocorreu um erro ao carregar edições",
+      "Refresh": "Recarregar",
+      "Table": {
+        "NoDataFound": "Nenhum dado encontrado",
+        "EditionNumberColumn": "Número da Edição",
+        "EditionNameColumn": "Nome da Edição",
+        "EditionCourseColumn": "Curso",
+        "EditionYearColumn": "Ano",
+        "EditionCountryColumn": "País",
+        "LocationColumn": "Local / Conselho",
+        "ApplicationsStatusColumn": "Estado de candidaturas",
+        "LessonsStatusColumn": "Estado de aulas",
+        "Actions": {
+          "DialogTitle": "Confirmação de eliminação",
+          "DialogDescription": "Tem a certeza que deseja eliminar esta edição? Esta ação não pode ser desfeita.",
+          "EditAction": "Editar edição",
+          "CopyIDAction": "Copiar ID da edição",
+          "DeleteAction": "Eliminar edição",
+          "OnDeleteLoading": "A eliminar edição...",
+          "OnDeleteSuccess": "Edição eliminada com sucesso!",
+          "OnDeleteError": "Ocorreu um erro ao eliminar edição."
+        },
+        "ApplicationsStatus": {
+          "OPEN": "Aberto",
+          "CLOSED": "Fechado"
+        },
+        "LessonsStatus": {
+          "OPEN": "Aberto",
+          "CLOSED": "Fechado"
+        },
+        "Filters": {
+          "ByCourse": "Filtrar curso",
+          "ByApplicationStatus": {
+            "Placeholder": "Estado de candidaturas",
+            "ALL": "Todos",
+            "OPEN": "Aberto",
+            "CLOSED": "Fechado"
+          },
+          "ByLessonsStatus": {
+            "Placeholder": "Estado de aulass",
+            "ALL": "Todos",
+            "OPEN": "Aberto",
+            "CLOSED": "Fechado"
+          }
+        },
+        "Navigation": {
+          "Next": "Próximo",
+          "Previous": "Anterior"
+        }
+      },
+      "CreateEditionSheet": {
+        "Title": "Criar nova Edição",
+        "Description": "Preencha os campos abaixo para criar uma nova edição.",
+        "Form": {
+          "Loading": "A criar nova edição...",
+          "Success": "Edição criada com sucesso!",
+          "Error": "Ocorreu um erro ao criar edição. Tente novamente.",
+          "ConflictError": "Já existe uma edição com o mesmo nome, na mesma cidade e no mesmo curso.",
+          "Title": "Criar nova edição",
+          "LoadingCourses": "A carregar cursos...",
+          "NoCoursesFound": "Nenhum curso encontrado",
+          "LoadingCountries": "A carregar países...",
+          "NoCountriesFound": "Nenhum país encontrado",
+          "SelectCountryFirst": "Selecione um país primeiro",
+          "NoLocationsFound": "Nenhum local encontrado neste país",
+          "EditionNumberLabel": "Número da Edição",
+          "EditionNumberPlaceholder": "1",
+          "EditionNameLabel": "Nome da Edição",
+          "EditionNamePlaceholder": "Primeira Edição",
+          "EditionCourseLabel": "Curso",
+          "EditionCoursePlaceholder": "Selecione o curso",
+          "EditionYearLabel": "Ano da Edição",
+          "EditionYearPlaceholder": "Selecione o ano",
+          "EditionCountryLabel": "País",
+          "EditionCountryPlaceholder": "Selecione o país",
+          "EditionLocationLabel": "Local / Concelho",
+          "EditionLocationPlaceholder": "Selecione o local / concelho",
+          "SubmitButton": "Criar Edição",
+          "CloseButton": "Fechar"
+        }
+      },
+      "EditEditionSheet": {
+        "Title": "Editar Edição",
+        "Description": "Preencha os campos abaixo para editar a edição.",
+        "Form": {
+          "Loading": "A editar edição...",
+          "Success": "Edição editada com sucesso!",
+          "Error": "Ocorreu um erro ao editar edição. Tente novamente.",
+          "ConflictError": "Já existe uma edição com o mesmo nome, na mesma cidade e no mesmo curso.",
+          "Title": "Editar edição",
+          "EditionNumberLabel": "Número da Edição",
+          "EditionNumberPlaceholder": "1",
+          "EditionNameLabel": "Nome da Edição",
+          "EditionNamePlaceholder": "Primeira Edição",
+          "EditionCourseLabel": "Curso",
+          "EditionCoursePlaceholder": "Selecione o curso",
+          "EditionYearLabel": "Ano da Edição",
+          "EditionYearPlaceholder": "Selecione o ano",
+          "EditionCountryLabel": "País",
+          "EditionCountryPlaceholder": "Selecione o país",
+          "EditionLocationLabel": "Local / Concelho",
+          "EditionLocationPlaceholder": "Selecione o local / concelho",
+          "EditionApplicationsStatusLabel": "Estado de candidaturas",
+          "EditionLessonsStatusLabel": "Estado de aulas",
+          "Status": {
+            "Open": "Aberto",
+            "Closed": "Fechado"
+          },
+          "SubmitButton": "Guardar Alterações",
+          "CloseButton": "Fechar"
+        }
+      }
+    },
+    "CandidatesPage": {
+      "BreadCrumbTitile": "Candidatos",
+      "PageTitle": "Candidaturas Submetidas",
+      "Subtitle": "Filtre e acompanhe o estado das candidaturas.",
+      "NoSelectedEditionTitle": "Nenhuma edição selecionada",
+      "NoSelectedEditionText": "Seleccione uma edição no topo da sidebar para ver os candidatos.",
+      "NoCandidatesFound": "Nenhum candidato encontrado nesta edição",
+      "Error": "Ocorreu um erro ao carregar candidatos",
+      "Refresh": "Recarregar",
+      "Table": {
+        "NoDataFound": "Nenhum dado encontrado",
+        "NameColumn": "Nome",
+        "EmailColumn": "E-mail",
+        "PhoneColumn": "Celular",
+        "ApplicationStatusColumn": "Estado da candidatura:",
+        "ApplicationDateColumn": "Data da candidatura",
+        "Actions": "Acções",
+        "EditAction": "Editar",
+        "CopyIDAction": "Copiar ID do candidato",
+        "ViewCandidateDetailsAction": "Ver detalhes do candidato",
+        "Filters": {
+          "ByCandidate": "Filtrar candidato",
+          "ByApplicationStatus": {
+            "Placeholder": "Estado de candidatura",
+            "ALL": "Todos",
+            "PENDING": "Pendente",
+            "INTERVIEW_CONFIRMED": "Entrevista confirmada",
+            "INTERVIEW_SCHEDULED": "Entrevista agendada",
+            "ADMITTED": "Admitido",
+            "NOT_ADMITTED": "Não Admitido"
+          }
+        },
+        "Navigation": {
+          "Next": "Próximo",
+          "Previous": "Anterior"
+        }
+      }
+    },
+    "InterviewsPage": {
+      "BreadCrumbTitile": "Entrevistas",
+      "PageTitle": "Entrevistas Agendadas",
+      "Subtitle": "Filtre, acompanhe resultados e aceda rapidamente ao candidato.",
+      "NoEditionSelected": "Nenhuma edição selecionada",
+      "NoEditionSelectedHint": "Seleccione uma edição no topo da sidebar para ver as entrevistas.",
+      "NoInterviewsFound": "Nenhuma entrevista agendada nesta edição",
+      "Error": "Ocorreu um erro ao carregar entrevistas",
+      "Refresh": "Recarregar",
+      "InterviewBookinkLink": "Link para agendamento de entrevistas:",
+      "BookingDialog": {
+        "TriggerButton": "Adicionar Link de Agendamento de Entrevistas",
+        "Title": "Link de Agendamento de Entrevistas",
+        "Description": "Insira o link para o agendamento das entrevistas na edição actual.",
+        "InputLabel": "Link de agendamento das entrevistas",
+        "InputPlaceholder": "https://calendly.com/...",
+        "UpdateButtonLabel": "Actualizar",
+        "SaveButtonLabel": "Guardar",
+        "OnSubmitSaveLoading": "A guardar link...",
+        "OnSubmitSaveSuccess": "Link guardado com sucesso!",
+        "OnSubmitSaveError": "Ocorreu um erro ao guardar o link. Tente novamente.",
+        "OnSubmitUpdateLoading": "A actualizar link...",
+        "OnSubmitUpdateSuccess": "Link actualizado com sucesso!",
+        "OnSubmitUpdateError": "Ocorreu um erro ao actualizar o link. Tente novamente."
+      },
+      "Table": {
+        "NoDataFound": "Nenhum dado encontrado",
+        "CandidateNameColumn": "Nome",
+        "ApplicationStatusColumn": "Estado da candidatura",
+        "InterviewResultColumn": "Resultado da entrevista",
+        "InterviewDateColumn": "Data da entrevista",
+        "CandidatePhoneColumn": "Número de Celular",
+        "CandidateEmailColumn": "Email",
+        "Actions": "Acções",
+        "CopyIDAction": "Copiar ID da entrevista",
+        "ViewInterviewDetailsAction": "Ver detalhes da entrevista",
+        "InterviewStatus": {
+          "CONFIRMED": "Entrevista confirmada",
+          "SCHEDULED": "Entrevista agendada",
+          "FINISHED": "Terminada"
+        },
+        "InterviewResult": {
+          "PENDING": "Pendente",
+          "ADMITTED": "Admitido",
+          "NOT_ADMITTED": "Não Admitido"
+        },
+        "Filters": {
+          "ByCandidate": "Filtrar candidato",
+          "ByInterviewStatus": {
+            "Placeholder": "Estado da estravista",
+            "ALL": "Todos",
+            "CONFIRMED": "Entrevista confirmada",
+            "SCHEDULED": "Entrevista agendada",
+            "FINISHED": "Terminada"
+          },
+          "ByInterviewResult": {
+            "Placeholder": "Resultado da entrevista",
+            "ALL": "Todos",
+            "PENDING": "Pendente",
+            "ADMITTED": "Admitido",
+            "NOT_ADMITTED": "Não Admitido"
+          }
+        },
+        "Navigation": {
+          "Next": "Próximo",
+          "Previous": "Anterior"
+        }
+      }
+    },
+    "InterviewDetailsPage": {
+      "Badge": "Detalhes da entrevista",
+      "Subtitle": "Consulte os dados do candidato, estado e resultado da entrevista.",
+      "InterviewNotFound": "Entrevista não encontrada",
+      "FetchInterviewError": "Ocorreu um erro ao carregar entrevista",
+      "Refresh": "Recarregar",
+      "Labels": {
+        "PhoneLabel": "Telefone",
+        "LocationLabel": "Local/Conselho",
+        "AgeLabel": "Idade",
+        "CourseLabel": "Curso"
+      },
+      "InterviewStatusLabel": "Estado da candidatura:",
+      "InterviewStatus": {
+        "CONFIRMED": "Entrevista confirmada",
+        "SCHEDULED": "Entrevista agendada",
+        "FINISHED": "Terminada"
+      },
+      "InterviewResultLabel": "Resultado da entrevista:",
+      "InterviewResult": {
+        "PENDING": "Pendente",
+        "ADMITTED": "Admitido",
+        "NOT_ADMITTED": "Não Admitido"
+      },
+      "YearsOld": "Anos",
+      "Motivation": "Motivação",
+      "InterviewObservations": "Observações da Entrevista",
+      "ApplicationScheduleLink": "Agende a sua entrevista no link abaixo:",
+      "CreateStudentForm": {
+        "OnSubmitLoading": "A processar..",
+        "OnSubmitSuccess": "Turma atribuida com sucesso!",
+        "OnSubmitError": "Ocorreu um erro ao atribuir turma. Tente novamente.",
+        "AssignClass": "Atribuir Turma",
+        "ClassesList": {
+          "Loading": "A carregar turmas...",
+          "NoClassesFound": "Nenhuma turma encontrada",
+          "InputPlaceHolder": "Selecione uma turma"
+        },
+        "ClassShift": {
+          "MORNING": "Manhã",
+          "AFTERNOON": "Tarde"
+        },
+        "SubmitButton": "Guardar"
+      },
+      "EndInterviewForm": {
+        "OnSubmitLoading": "A processar...",
+        "OnSubmitSuccess": "Entrevista concluída com sucesso!",
+        "OnSubmitError": "Ocorreu um erro ao concluir entrevista. Tente novamente.",
+        "InterviewObservationsLabel": "Observações da Entrevista",
+        "InterviewObservationsPlaceholder": "Insira as suas observações aqui",
+        "InterviewResultLabel": "Resultado da Entrevista",
+        "InterviewResultPlaceholder": "Selecione o resultado",
+        "InterviewResultsList": {
+          "Admitted": "Admitido",
+          "NotAdmitted": "Não Admitido"
+        },
+        "SubmitButton": "Concluir Entrevista"
+      },
+      "ViewInterviewGuide": "Ver Guião de entrevista"
+    },
+    "ClassesPage": {
+      "BreadCrumbTitile": "Turmas",
+      "PageTitle": "Turmas",
+      "Subtitle": "Gerencie as turmas da edição, turnos, capacidade e alunos.",
+      "NoEditionSelectedTitle": "Nenhuma edição seleccionada",
+      "NoEditionSelectedDescription": "Selecione uma edição no topo da sidebar para ver as turmas.",
+      "NoClassesFound": "Nenhuma turma encontrada",
+      "NoClassesFoundInEdition": "Nenhuma turma encontrada nesta edição",
+      "NoDataFound": "Nenhum dado encontrado",
+      "Error": "Ocorreu um erro ao carregar turmas",
+      "Refresh": "Recarregar",
+      "CreateClassButton": "Criar Turma",
+      "Table": {
+        "ClassEditionColumn": "Edição",
+        "ClassLocationColumn": "Local",
+        "ClassShiftColumn": "Turno",
+        "ClassShift": {
+          "MORNING": "Manhã",
+          "AFTERNOON": "Tarde"
+        },
+        "ClassCapacityColumn": "Capacidade",
+        "Students": "alunos",
+        "ClassInstructorColumn": "Instrutor",
+        "ClassStudentsColumn": "Número de Estudantes",
+        "Actions": {
+          "Label": "Acções",
+          "OpenMenu": "Abrir menu",
+          "EditAction": "Editar turma",
+          "CopyIDAction": "Copiar ID da turma",
+          "ViewDetailsAction": "Ver detalhes da turma"
+        },
+        "Filters": {
+          "ByEdition": "Filtrar por edição",
+          "ByShift": {
+            "Placeholder": "Filtrar por turno...",
+            "ALL": "All",
+            "MORNING": "Manhã",
+            "AFTERNOON": "Tarde"
+          }
+        },
+        "Navigation": {
+          "Next": "Próximo",
+          "Previous": "Anterior"
+        }
+      }
+    },
+    "CreateClassPage": {
+      "Form": {
+        "OnSubmitLoading": "A criar turma...",
+        "OnSubmitSuccess": "Turma criada com sucesso!",
+        "OnSubmitError": "Ocorreu um erro ao criar turma. Tente novamente.",
+        "Title": "Criar nova turma",
+        "Subtitle": "Defina o turno e a capacidade da nova turma.",
+        "ShiftLabel": "Turno",
+        "ShiftPlaceholder": "Selecione o turno",
+        "Shifts": {
+          "Morning": "Manhã",
+          "Afternoon": "Tarde"
+        },
+        "CapacityLabel": "Capacidade",
+        "CapacityPlaceholder": "Insira a capacidade máxima de alunos",
+        "SubmitButton": "Criar Turma"
+      }
+    },
+    "ClassDetailsPage": {
+      "ClassNotFound": "Turma não encontrada",
+      "FetchClassError": "Ocorreu um erro ao carregar turma",
+      "Refresh": "Recarregar",
+      "NoStudentsEnrolled": "Nenhum aluno encontrado nesta turma",
+      "Title": "Turma da {shift}",
+      "Subtitle": "Lista de estudantes matriculados nesta turma.",
+      "Students": "Alunos",
+      "ClassCapacity": "Capacidade",
+      "StudentsEnrolled": "Alunos inscritos",
+      "Shifts": {
+        "MORNING": "Manhã",
+        "AFTERNOON": "Tarde",
+        "NIGHT": "Noite"
+      }
+    },
+    "SupportPage": {
+      "BreadCrumbTitile": "Suporte",
+      "PageTitle": "Centro de Suporte",
+      "HelpCenterSubtitle": "Estamos aqui para ajudar! \n Envie-nos uma mensagem e responderemos o mais breve possível.",
+      "Form": {
+        "OnSubmitLoading": "A enviar mensagem...",
+        "OnSubmitSuccess": "Mensagem enviada com sucesso!",
+        "OnSubmitError": "Ocorreu um erro ao enviar a mensagem. Tente novamente.",
+        "NameLabel": "Nome",
+        "NamePlaceholder": "Insira o seu nome completo",
+        "EmailLabel": "Email",
+        "EmailPlaceholder": "Insira o seu email",
+        "SubjectLabel": "Assunto",
+        "SubjectPlaceholder": "Insira o assunto da sua mensagem",
+        "MessageLabel": "Mensagem",
+        "MessagePlaceholder": "Escreva a sua mensagem aqui",
+        "ResetButton": "Limpar formulário",
+        "SubmitButton": "Enviar Mensagem"
+      }
+    },
+    "UserDialog": {
+      "ProfileLink": "Perfil",
+      "SignOutLink": "Terminar Sessão"
+    }
+  }
+}

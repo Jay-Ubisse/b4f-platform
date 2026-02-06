@@ -1,0 +1,91 @@
+/* editor.css */
+.tiptap-editor {
+  min-height: 300px;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background-color: white;
+  color: #1a202c;
+}
+
+/* Headings */
+.tiptap-editor h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.tiptap-editor h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraphs */
+.tiptap-editor p {
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+.tiptap-editor ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tiptap-editor ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Code block */
+/* Conteúdo no editor (esquerdo) */
+.tiptap-editor pre {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  margin-bottom: 1rem;
+}
+
+.tiptap-editor pre code {
+  background: transparent !important;
+  color: inherit !important;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.tiptap-editor p code,
+.tiptap-editor li code,
+.tiptap-editor h1 code,
+.tiptap-editor h2 code {
+  background-color: #edf2f7;
+  color: #2d3748;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+}
+
+
+/* Images */
+.tiptap-editor img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* Blockquote */
+.tiptap-editor blockquote {
+  border-left: 4px solid #cbd5e0;
+  padding-left: 1rem;
+  color: #4a5568;
+  margin: 1rem 0;
+  font-style: italic;
+}

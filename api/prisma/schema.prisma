@@ -1,0 +1,513 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider        = "prisma-client-js"
+  output          = "../src/generated/prisma"
+  previewFeatures = ["relationJoins"]
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id       String   @id @default(cuid())
+  email    String   @unique
+  name     String
+  role     UserRole
+  password String
+
+  teacher Teacher?
+  student Student?
+
+  courses  Course[]
+  modules  Module[]
+  chapters Chapter[]
+  quizzes  Quizz[]
+  exercise Exercise[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+enum UserRole {
+  RECRUITER
+  ADMIN
+  TEACHER
+  STUDENT
+  ALUMNI
+}
+
+model Edition {
+  id                  String             @id @default(cuid())
+  name                String
+  number              Int
+  year                Int
+  interviewBookingUrl String?
+  applicationsStatus  ApplicationSstatus @default(CLOSED)
+  lessonsStatus       LessonsStatus      @default(CLOSED)
+
+  country   Country @relation(fields: [countryId], references: [id])
+  countryId String
+
+  location   Location @relation(fields: [locationId], references: [id])
+  locationId String
+
+  course   Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  courseId String
+
+  calendar   Calendar?
+  attendance Attendance[]
+  students   Student[]
+  candidates Candidate[]
+  interviews Interview[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  classes   Class[]
+
+  @@map("editions")
+}
+
+enum ApplicationSstatus {
+  OPEN
+  CLOSED
+}
+
+enum LessonsStatus {
+  OPEN
+  CLOSED
+}
+
+model Country {
+  id   String @id @default(cuid())
+  name String
+
+  locations Location[]
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  editions  Edition[]
+
+  @@map("countries")
+}
+
+model Location {
+  id   String @id @default(cuid())
+  name String
+
+  country   Country @relation(fields: [countryId], references: [id], onDelete: Cascade)
+  countryId String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  editions  Edition[]
+
+  @@map("locations")
+}
+
+model Candidate {
+  id         String          @id @default(cuid())
+  name       String
+  email      String          @unique
+  code       String          @unique
+  phone      String
+  whatsapp   String?
+  birthDate  String
+  gender     Gender
+  motivation String          @db.Text
+  status     CandidateStatus @default(ADMITTED)
+
+  edition   Edition @relation(fields: [editionId], references: [id], onDelete: Cascade)
+  editionId String
+
+  interview     Interview?
+  notifications Notification[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([email, editionId])
+  @@map("candidates")
+}
+
+enum CandidateStatus {
+  PENDING //Pendente
+  INTERVIEW_SCHEDULED //Entrevista agendada
+  INTERVIEW_CONFIRMED //Entrevista confirmada
+  ADMITTED // Admitido
+  NOT_ADMITTED //Não Admitido
+}
+
+model Student {
+  id             String       @id @default(cuid())
+  name           String
+  email          String       @unique
+  phone          String
+  gender         Gender
+  whatsapp       String?
+  birthDate      String
+  resumeUrl      String?
+  linkedinUrl    String?
+  githubUrl      String?
+  certificateUrl String?
+  avatar         String?
+  bio            String?      @db.Text
+  level          StudentLevel @default(BEGINNER)
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String @unique
+
+  edition   Edition @relation(fields: [editionId], references: [id], onDelete: Cascade)
+  editionId String
+
+  class   Class  @relation(fields: [classId], references: [id], onDelete: Cascade)
+  classId String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  attendances       Attendance[]
+  exercisesProgress ExerciseProgress[]
+  ChapterProgress   ChapterProgress[]
+  ModuleProgress    ModuleProgress[]
+
+  @@map("students")
+}
+
+enum StudentLevel {
+  BEGINNER
+  ADVANCED
+}
+
+model Teacher {
+  id String @id @default(cuid())
+
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  specialty String?
+  avatar    String?
+  bio       String? @db.Text
+  isActive  Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("teachers")
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+}
+
+model Class {
+  id        String     @id @default(uuid())
+  edition   Edition    @relation(fields: [editionId], references: [id], onDelete: Cascade)
+  editionId String
+  shift     ClassShift
+  capacity  Int
+
+  students Student[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("classes")
+}
+
+enum ClassShift {
+  MORNING
+  AFTERNOON
+}
+
+model Interview {
+  id                String          @id @default(cuid())
+  status            InterviewStatus @default(SCHEDULED)
+  result            InterviewResult @default(PENDING)
+  candidate         Candidate       @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  candidateId       String          @unique
+  edition           Edition         @relation(fields: [editionId], references: [id], onDelete: Cascade)
+  editionId         String
+  interviewGuideUrl String?         @default("")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("interviews")
+}
+
+enum InterviewStatus {
+  SCHEDULED
+  CONFIRMED
+  FINISHED
+}
+
+enum InterviewResult {
+  PENDING
+  ADMITTED
+  NOT_ADMITTED
+}
+
+model MessageTemplate {
+  id       String                  @id @default(cuid())
+  message  String                  @db.Text
+  category MessageTemplateCategory @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("messages-templates")
+}
+
+enum MessageTemplateCategory {
+  INTERVIEW_INVITE
+}
+
+model Notification {
+  id          String             @id @default(cuid())
+  content     String             @db.Text
+  recipient   Candidate          @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  candidateId String
+  status      NotificationStatus
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("notifications")
+}
+
+enum NotificationStatus {
+  PENDING
+  SENT
+  FAILED
+}
+
+model Calendar {
+  id          String @id @default(cuid())
+  calendarUrl String
+
+  edition   Edition @relation(fields: [editionId], references: [id], onDelete: Cascade)
+  editionId String  @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("calendars")
+}
+
+model Attendance {
+  id        String           @id @default(cuid())
+  student   Student          @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  studentId String
+  date      DateTime
+  status    AttendaceStatus?
+  edition   Edition          @relation(fields: [editionId], references: [id], onDelete: Cascade)
+  editionId String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([studentId, date, editionId]) // um registro por aluno + data + edição
+  @@map("attendance")
+}
+
+enum AttendaceStatus {
+  PRESENT
+  ABSENT
+}
+
+model Course {
+  id             String         @id @default(cuid())
+  name           String
+  duration       Int            @default(0)
+  tags           String?
+  bannerUrl      String?
+  modulesNumber  Int            @default(0)
+  chaptersNumber Int            @default(0)
+  quizzesNumber  Int            @default(0)
+  modality       CourseModality
+
+  createdBy   User   @relation(fields: [createdById], references: [id], onDelete: Cascade)
+  createdById String
+
+  editions Edition[]
+  modules  Module[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("courses")
+}
+
+enum CourseModality {
+  IN_PERSON
+  ONLINE
+  HYBRID
+}
+
+model Module {
+  id             String  @id @default(cuid())
+  name           String
+  chaptersNumber Int     @default(0)
+  quizzesNumber  Int     @default(0)
+  bannerUrl      String?
+
+  course   Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  courseId String
+
+  createdBy   User   @relation(fields: [createdById], references: [id], onDelete: Cascade)
+  createdById String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  chapters        Chapter[]
+  modulesProgress ModuleProgress[]
+
+  @@map("modules")
+}
+
+model Chapter {
+  id            String  @id @default(cuid())
+  name          String
+  bannerUrl     String?
+  videoUrl      String?
+  content       String
+  quizzesNumber Int     @default(0)
+
+  createdBy   User   @relation(fields: [createdById], references: [id], onDelete: Cascade)
+  createdById String
+
+  module   Module @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  moduleId String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  quizzes          Quizz[]
+  chaptersProgress ChapterProgress[]
+
+  @@map("chapters")
+}
+
+model Quizz {
+  id   String @id @default(cuid())
+  name String
+
+  chapter   Chapter @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  chapterId String
+
+  createdBy   User   @relation(fields: [createdById], references: [id], onDelete: Cascade)
+  createdById String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  quizzItems QuizzItem[]
+
+  @@map("quizzes")
+}
+
+model QuizzItem {
+  id       String  @id @default(cuid())
+  question String
+  option1  String
+  option2  String
+  option3  String?
+  option4  String?
+  answer   String
+
+  quizz   Quizz  @relation(fields: [quizzId], references: [id], onDelete: Cascade)
+  quizzId String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("quizz_items")
+}
+
+// Progresso do aluno por capítulo
+model ChapterProgress {
+  id        String  @id @default(cuid())
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  studentId String
+
+  chapter   Chapter @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  chapterId String
+
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+
+  @@unique([studentId, chapterId])
+  @@map("chapter_progress")
+}
+
+// Progresso do aluno por módulo
+model ModuleProgress {
+  id        String  @id @default(cuid())
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  studentId String
+
+  module   Module @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  moduleId String
+
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+
+  @@unique([studentId, moduleId])
+  @@map("module_progress")
+}
+
+model Exercise {
+  id           String           @id @default(cuid())
+  title        String
+  description  String?
+  language     ExerciseLanguage @default(JAVASCRIPT) // ✅ novo campo
+  functionName String? // apenas usado para JS
+  parameters   String[] // apenas usado para JS
+  tests        Json? // apenas usado para JS
+  htmlTemplate String? // usado para HTML
+  cssTemplate  String? // usado para CSS
+
+  createdBy   User   @relation(fields: [createdById], references: [id], onDelete: Cascade)
+  createdById String
+
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  exercisesProgress ExerciseProgress[]
+
+  @@map("exercises")
+}
+
+enum ExerciseLanguage {
+  JAVASCRIPT
+  HTML
+  CSS
+}
+
+model ExerciseProgress {
+  id String @id @default(cuid())
+
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  studentId String
+
+  exercise   Exercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  exerciseId String
+
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+
+  @@unique([studentId, exerciseId])
+  @@map("exercise_progress")
+}
