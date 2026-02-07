@@ -20,10 +20,6 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import { NavHeader } from "./nav-header";
-import { useQuery } from "@tanstack/react-query";
-import { getEditions } from "@/services/edition";
-import { EditionSwitcher } from "./edition-switcher";
-import { Icons } from "../loading-spinner";
 
 // This is sample data.
 const data = {
@@ -72,16 +68,6 @@ const data = {
 };
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-  const {
-    isPending,
-    error,
-    data: editions,
-  } = useQuery({
-    queryKey: ["editions"],
-    queryFn: () => getEditions(),
-    refetchInterval: 5000,
-  });
-
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
