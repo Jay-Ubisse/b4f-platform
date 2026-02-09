@@ -14,9 +14,13 @@
     },
     "ApplicationPage": {
       "EditionNotFound": "Nenhuma edição aberta para candidaturas no momento",
+      "LoadErrorTitle": "Não foi possível carregar as edições",
+      "LoadErrorSubtitle": "Verifique a ligação e tente novamente.",
+      "Refresh": "Recarregar",
       "Form": {
         "Processing": "A processar candidatura...",
         "Success": "Candidatura submetida com sucesso!",
+        "FormInferenceError": "Não foi possível identificar uma edição aberta para esta seleção.",
         "Error": "Ocorreu um erro ao submeter candidatura. Tente novamente.",
         "Title": "Candidate-se ao ",
         "NameLabel": "Nome",

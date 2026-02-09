@@ -36,8 +36,13 @@
         "PhonePlaceholder": "Enter your mobile number",
         "WhatsAppLabel": "WhatsApp (optional)",
         "WhatsAppPlaceholder": "Enter your WhatsApp",
+        "CountryLabel": "Country",
+        "CountryPlaceholder": "Select country",
         "CourseLabel": "Course",
         "CoursePlaceholder": "Select a course",
+        "SelectCountryFirst": "Select a country first",
+        "LocationLabel": "Location/Council",
+        "LocationPlaceholder": "Select location/council",
         "MotivationLabel": "Motivation",
         "MotivationPlaceholder": "What motivated you to apply for the program?",
         "SendButton": "Submit"

@@ -193,13 +193,8 @@ export function CandidateApplicationForm() {
           </span>
 
           <div className="min-w-0">
-            <p className="text-sm font-semibold">
-              {t("LoadErrorTitle") ?? "Não foi possível carregar as edições"}
-            </p>
-            <p className="text-sm text-white/80">
-              {t("LoadErrorSubtitle") ??
-                "Verifique a ligação e tente novamente."}
-            </p>
+            <p className="text-sm font-semibold">{t("LoadErrorTitle")}</p>
+            <p className="text-sm text-white/80">{t("LoadErrorSubtitle")}</p>
 
             <div className="mt-3">
               <Button
@@ -208,7 +203,7 @@ export function CandidateApplicationForm() {
                 className="rounded-xl"
                 onClick={() => refetch()}
               >
-                {t("Refresh") ?? "Recarregar"}
+                {t("Refresh")}
               </Button>
             </div>
           </div>
@@ -241,11 +236,7 @@ export function CandidateApplicationForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     if (!inferredEditionId) {
-      toast.error(
-        t("Form.EditionInferenceError") ??
-          "Não foi possível identificar uma edição aberta para esta seleção.",
-        { id: "1" },
-      );
+      toast.error(t("Form.EditionInferenceError"), { id: "1" });
       return;
     }
 
@@ -650,34 +641,6 @@ export function CandidateApplicationForm() {
                   </FormItem>
                 )}
               />
-
-              {/* Preview da edição detectada */}
-              {selectedCountryId && selectedCourseId && selectedLocationId && (
-                <div
-                  className={cn(
-                    "md:col-span-2 rounded-2xl border p-4 text-sm",
-                    inferredEdition
-                      ? "border-emerald-400/30 bg-emerald-500/10 text-white"
-                      : "border-red-400/30 bg-red-500/10 text-white",
-                  )}
-                >
-                  <p className="font-medium">
-                    {t("Form.InferredEditionLabel") ?? "Edição detectada"}
-                  </p>
-
-                  {inferredEdition ? (
-                    <p className="text-white/85">
-                      {inferredEdition.name} — {inferredEdition.year} (#
-                      {inferredEdition.number})
-                    </p>
-                  ) : (
-                    <p className="text-white/85">
-                      {t("Form.InferredEditionNotFound") ??
-                        "Nenhuma edição aberta encontrada para esta seleção."}
-                    </p>
-                  )}
-                </div>
-              )}
 
               {/* Motivação */}
               <FormField
